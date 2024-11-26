@@ -31,3 +31,9 @@ project-name/
 ├── config.yaml         # Configuration file for project settings
 └── .gitignore          # Files and folders to ignore in Git
 ```
+
+# Usage
+
+```bash
+python3 ds_proj_create/src/main.py
+```
