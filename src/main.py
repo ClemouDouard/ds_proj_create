@@ -33,6 +33,16 @@ def create_project_structure(project_name):
         with open(file, "w") as f:
             if "README.md" in file:
                 f.write(f"# {project_name}\n\nProject description goes here.\n")
+            if "requirements.txt" in file:
+                f.write(
+                    "numpy\n"
+                    "pandas\n"
+                    "matplotlib\n"
+                    "seaborn\n"
+                    "scikit-learn\n"
+                    "jupyter\n"
+                    "notebook\n"
+                )
 
     print(f"Project structure for '{project_name}' created successfully!")
 
