@@ -7,6 +7,8 @@ This is an automatisation script that creates a new data science project
 ```bash
 project-name/
 │
+├── my_env/             # The virtual environment with the packages installed
+│
 ├── data/
 │   ├── raw/            # Unprocessed datasets
 │   ├── interim/        # Partially processed data
@@ -24,11 +26,8 @@ project-name/
 ├── reports/            # Generated analysis, reports, and presentations
 │   ├── figures/        # Images, plots, etc.
 │
-├── tests/              # Unit and integration tests
-│
 ├── requirements.txt    # List of dependencies (for pip/conda)
 ├── README.md           # Overview of the project
-├── config.yaml         # Configuration file for project settings
 └── .gitignore          # Files and folders to ignore in Git
 ```
 
