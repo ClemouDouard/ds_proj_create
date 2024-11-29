@@ -52,10 +52,12 @@ def virtual(project_name: str) -> None:
     
     sub.run([pip_path, "install", "-r", f"{project_name}/requirements.txt"])
 
-    print(f"L'environnement virtuel a été créé dans '{env_path}'.")
-    print(f"Pour l'activer, exécutez : source {env_path}/bin/activate")
+    print(f"The virtual environment has been created in '{env_path}'.")
+    print(f"To activate it, run : source {env_path}/bin/activate")
 
 if __name__ == "__main__":
     project_name = input("Enter the project name: ").strip()
     create_project_structure(project_name)
-    virtual(project_name)
+    response = str(input("Would you like to create a virtual environment? (yes/no): ")).strip().lower()
+    if response == "yes":
+        virtual(project_name)
